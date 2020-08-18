@@ -108,21 +108,21 @@
 
     <!-- Header -->
     <header id="header" class="header">
-	<div style="background-image: url('{{ url_for('static', filename='download-background.jpg') }}');">
+	<div style="background-image: url('{{ url_for('static', filename='header-background.jpg') }}');">
             <div class="header-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="text-container">
-                                <h1>MOBILE APP <br>FOR <span id="js-rotating">DESIGNERS, MARKETERS, DEVELOPERS</span></h1>
-                                <p class="p-large">Leno is one of the easiest and feature packed marketing automation apps in the market. Download it today!</p>
+                                <h1>IMPLEMENTATION OF AI<br>USING<span id="js-rotating">PYTHON,KERAS,TENSORFLOW,FLASK</span></h1>
+                                <p class="p-large">Leno is made for implementation of projects particularly made by Hridhay!</p>
                                 <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
                                 <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
                             </div>
                         </div> <!-- end of col -->
                         <div class="col-lg-6">
                             <div class="image-container">
-                                <img class="img-fluid" src="{{ url_for('static', filename='header-iphone.png') }}" alt="alternative">
+                                <img class="img-fluid" src="https://specials-images.forbesimg.com/imageserve/712848085/960x0.jpg" alt="alternative">
                             </div> <!-- end of image-container -->
                         </div> <!-- end of col -->
                     </div> <!-- end of row -->
@@ -494,32 +494,34 @@
 
     <!-- Video -->
     <div id="preview" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>PREVIEW</h2>
-                    <div class="p-heading p-large">Target the right customers for your business with the help of Leno's patented segmentation technology</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+	<div style="background-image: url('{{ url_for('static', filename='download-background.jpg') }}');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>PREVIEW</h2>
+                        <div class="p-heading p-large">Target the right customers for your business with the help of Leno's patented segmentation technology</div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
 
                     <!-- Video Preview -->
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="{{ url_for('static', filename='video-frame.jpg') }}" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div> <!-- end of video-wrapper -->
-                    </div> <!-- end of image-container -->
+                        <div class="image-container">
+                            <div class="video-wrapper">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                    <img class="img-fluid" src="{{ url_for('static', filename='video-frame.jpg') }}" alt="alternative">
+                                    <span class="video-play-button">
+                                        <span></span>
+                                    </span>
+                                </a>
+                            </div> <!-- end of video-wrapper -->
+                        </div> <!-- end of image-container -->
                     <!-- end of video preview -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+	</div>
     </div> <!-- end of basic-1 -->
     <!-- end of video -->
 
@@ -735,25 +737,27 @@
 
 
     <!-- Download -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Download <span class="blue">Leno</span></h2>
-                        <p class="p-large">Target the right customers for your business with the help of Leno's patented technology and increase conversion figures in less than 2 weeks</p>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="{{ url_for('static', filename='download.png') }}" alt="alternative">
-                    </div> <!-- end of img-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
+    <div style="background-image: url('{{ url_for('static', filename='download-background.jpg') }}');">
+        <div class="basic-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h2>Download <span class="blue">Leno</span></h2>
+                            <p class="p-large">Target the right customers for your business with the help of Leno's patented technology and increase conversion figures in less than 2 weeks</p>
+                            <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
+                            <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{{ url_for('static', filename='download.png') }}" alt="alternative">
+                        </div> <!-- end of img-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-4 -->
+    </div>        
     <!-- end of download -->
 
 
@@ -793,54 +797,56 @@
 
     <!-- Contact -->
     <div id="contact" class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>CONTACT</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
-                        <li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">office@leno.com</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+	<div style="background-image: url('{{ url_for('static', filename='contact-background.jpg') }}');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>CONTACT</h2>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
+                            <li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>
+                            <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+81 720 2212</a></li>
+                            <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">office@leno.com</a></li>
+                        </ul>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="#your-link">Privacy Policy</a> and <a href="#your-link">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
+                        <form id="contactForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname" required>
+                                <label class="label-control" for="cname">Name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail" required>
+                                <label class="label-control" for="cemail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Your message</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="#your-link">Privacy Policy</a> and <a href="#your-link">Terms Conditions</a> 
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
                     <!-- end of contact form -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+	</div>
     </div> <!-- end of form -->
     <!-- end of contact -->
 
