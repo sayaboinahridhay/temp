@@ -113,6 +113,11 @@
                                 <p class="p-large">Leno is made for implementation of projects particularly made by Hridhay!</p>
                                 <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
                                 <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
+				 <form action="{{ url_for('priv')}}" method="post">
+				    <label for="img">select image:</label>
+				    <input type="file" id="img" name="img" accept="image/*">
+				  <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+				 </form>
                             </div>
                         </div> <!-- end of col -->
                         <div class="col-lg-6">
