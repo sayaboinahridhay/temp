@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title></title>
@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"><!-- Required meta tags -->
 </head>
 <body>
+    <div class="signup-form">
     <form action="reg" method="post">
         {% csrf_token %}
         <h1>Sign Up</h1>
@@ -16,8 +17,9 @@
         <input type="text" name="username" placeholder="Uirest" class="txtb">
         <input type="email" name="email" placeholder="Eirest" class="txtb">
         <input type="password" name="password1" placeholder="Pirest" class="txtb">
-        <input type="password" name="password2" placeholder="CPirest" class="txtb"><br>
+        <input type="password" name="password2" placeholder="CPirest" class="txtb">
         <input type="Submit" value="Create Account" class="signup-btn">
     </form>
+   </div>
 </body>
 </html>
