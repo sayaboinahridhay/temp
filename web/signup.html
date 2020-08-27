@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   </head>
   <body>
+    <div style="background-image: url({% static 'images/bg.png' %});">
     <div class="signup-form">
       <form class="" action="reg" method="post">
         {% csrf_token %}
@@ -18,6 +19,7 @@
         <input type="submit" value="Create Account" class="signup-btn">
         <a href="#">Already Have one ?</a>
       </form>
+     </div> 
     </div>
   </body>
 </html>
