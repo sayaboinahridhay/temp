@@ -9,16 +9,12 @@
   </head>
   <body>
     <div class="signup-form">
-      <form class="" action="reg" method="post">
+      <form class="" action="login" method="post">
         {% csrf_token %}
-        <h1>Sign Up</h1>
-        <input type="text" placeholder="first_name" class="txtb">
-        <input type="text" placeholder="last_name" class="txtb">
+        <h1>Login</h1>
         <input type="text" placeholder="username" class="txtb">
-        <input type="email" placeholder="email" class="txtb">
-        <input type="password" placeholder="Password1" class="txtb">
-        <input type="password" placeholder="Password2" class="txtb">
-        <input type="submit" value="Create Account" class="signup-btn">
+        <input type="password" placeholder="Password" class="txtb">
+        <input type="submit" value="Loginto Account" class="signup-btn">
       </form>
       <div>
         {% for messages in messages %}
