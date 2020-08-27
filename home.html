@@ -24,14 +24,14 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='fontawesome-all.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='swiper.css') }}" rel="stylesheet">
-	<link href="{{ url_for('static', filename='magnific-popup.css') }}" rel="stylesheet">
-	<link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'styles.css' %}" rel="stylesheet">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
 	<!-- Favicon  -->
-    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="icon" href="{% static 'favicon.png' %}">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -49,7 +49,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="#your-link"><img src="{{ url_for('static', filename='logo.svg') }}" alt="alternative"></a> 
+        <a class="navbar-brand logo-image" href="#your-link"><img src="{% static 'logo.svg' %}" alt="alternative"></a> 
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{url_for('terms')}}"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <a class="dropdown-item" href="{% static 'fontawesome-all.css' %}{{url_for('terms')}}"><span class="item-text">TERMS CONDITIONS</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                         <a class="dropdown-item" href="#your-link"><span class="item-text">PRIVACY POLICY</span></a>
                     </div>
@@ -103,7 +103,7 @@
 
     <!-- Header -->
     <header id="header" class="header">
-	<div style="background-image: url('{{ url_for('static', filename='header-background.jpg') }}');">
+	<div style="background-image: url('{% static 'header-background.jpg' %}');">
             <div class="header-content">
                 <div class="container">
                     <div class="row">
@@ -142,7 +142,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-1.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-1.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Leno.</p>
                                             <p class="testimonial-author">Jude Thorn - Designer</p>
@@ -154,7 +154,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-2.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-2.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">I don't know how I managed to get work done without Leno. The speed of this application is amazing!</p>
                                             <p class="testimonial-author">Roy Smith - Developer</p>
@@ -166,7 +166,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-3.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-3.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">This app has the potential of becoming a mandatory tool in every marketer's day to day operations.</p>
                                             <p class="testimonial-author">Marsha Singer - Marketer</p>
@@ -178,7 +178,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-4.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-4.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">Searching for a great marketing automation app was difficult but thankfully I found Leno.</p>
                                             <p class="testimonial-author">Tim Shaw - Designer</p>
@@ -190,7 +190,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-5.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-5.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">Leno's support team is amazing. They've helped me with some issues and I am so grateful to them.</p>
                                             <p class="testimonial-author">Lindsay Spice - Marketer</p>
@@ -202,7 +202,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="{{ url_for('static', filename='testimonial-6.jpg') }}" alt="alternative">
+                                        <img class="card-image" src="{% static 'testimonial-6.jpg' %}" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-text">Who would have thought that Leno can provide such amazing results in just a few weeks of use</p>
                                             <p class="testimonial-author">Ann Black - Developer</p>
@@ -235,7 +235,7 @@
                                     
 
     <!-- Video -->
-    <div style="background-image: url('{{ url_for('static', filename='download-background.jpg') }}');">
+    <div style="background-image: url('{% static 'download-background.jpg' %}');">
 	<div id="preview" class="basic-1">
             <div class="container">
                 <div class="row">
@@ -251,7 +251,7 @@
                         <div class="image-container">
                             <div class="video-wrapper">
                                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                    <img class="img-fluid" src="{{ url_for('static', filename='video-frame.jpg') }}" alt="alternative">
+                                    <img class="img-fluid" src="{% static 'video-frame.jpg' %}" alt="alternative">
                                     <span class="video-play-button">
                                         <span></span>
                                     </span>
@@ -273,7 +273,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="{{ url_for('static', filename='details-1-iphone.png') }}" alt="alternative">
+                    <img class="img-fluid" src="{% static 'details-1-iphone.png' %}" alt="alternative">
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
@@ -301,7 +301,7 @@
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
-                        <img class="img-fluid" src="{{ url_for('static', filename='details-2-iphone.png') }}" alt="alternative">
+                        <img class="img-fluid" src="{% static 'details-2-iphone.png' %}" alt="alternative">
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -316,7 +316,7 @@
 		<div class="row">
 			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
 			<div class="col-lg-6">
-				<img class="img-fluid" src="{{ url_for('static', filename='details-lightbox-1.png') }}" alt="alternative">
+				<img class="img-fluid" src="{% static 'details-lightbox-1.png' %}" alt="alternative">
 			</div>
 			<div class="col-lg-6">
 				<h3>Goals Setting</h3>
@@ -344,7 +344,7 @@
 		<div class="row">
 			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
 			<div class="col-lg-6">
-				<img class="img-fluid" src="{{ url_for('static', filename='details-lightbox-2.png') }}" alt="alternative">
+				<img class="img-fluid" src="{% static 'details-lightbox-2.png' %}" alt="alternative">
 			</div>
 			<div class="col-lg-6">
 				<h3>Calendar Input</h3>
@@ -382,80 +382,80 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-1.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-1.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-1.png'' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-1.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-2.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-2.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-2.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-2.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-3.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-3.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-3.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-3.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-4.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-4.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-4.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-4.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-5.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-5.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-5.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-5.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-6.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-6.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-6.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-6.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-7.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-7.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-7.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-7.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-8.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-8.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-8.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-8.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-9.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-9.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-9.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-9.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='screenshot-10.png') }}" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="{{ url_for('static', filename='screenshot-10.png') }}" alt="alternative">
+                                    <a href="{% static 'screenshot-10.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'screenshot-10.png' %}" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -479,7 +479,7 @@
 
 
     <!-- Download -->
-    <div style="background-image: url('{{ url_for('static', filename='download-background.jpg') }}');">
+    <div style="background-image: url('{% static 'download-background.jpg' %}');">
         <div class="basic-4">
             <div class="container">
                 <div class="row">
@@ -493,7 +493,7 @@
                     </div> <!-- end of col -->
                     <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
-                            <img class="img-fluid" src="{{ url_for('static', filename='download.png') }}" alt="alternative">
+                            <img class="img-fluid" src="{% static 'download.png' %}" alt="alternative">
                         </div> <!-- end of img-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -583,14 +583,14 @@
     
     	
     <!-- Scripts -->
-    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="{{ url_for('static', filename='popper.min.js') }}"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
-    <script src="{{ url_for('static', filename='easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="{{ url_for('static', filename='swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
-    <script src="{{ url_for('static', filename='jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="{{ url_for('static', filename='morphext.min.js') }}"></script> <!-- Morphtext rotating text in the header -->
-    <script src="{{ url_for('static', filename='validator.min.js') }}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script> <!-- Custom scripts -->
+    <script src="{% static 'jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{% static 'bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+    <script src="{% static 'easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{% static 'jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'morphext.min.js' %}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{% static 'validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{% static 'scripts.js' %}"></script> <!-- Custom scripts -->
 </body>
 </html>
