@@ -104,6 +104,7 @@
 <body>
 <div class="signup-form">
     <form action="reg" method="post">
+	    {% csrf_token %}
 		<h2>Sign Up</h2>
 		<p>Please fill in this form to create an account!</p>
 		<hr>
