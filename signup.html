@@ -71,6 +71,7 @@
 <body>
 <div class="login-form">
     <form action="login" method="post">
+            {% csrf_token %}
         <h2 class="text-center">Login</h2>   
         <div class="form-group has-error">
         	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
