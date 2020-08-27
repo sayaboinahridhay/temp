@@ -2,13 +2,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+  <style>
+  body {
+    background-image: url("https://th.bing.com/th/id/OIP.wVj2lshV9DbX0sbGdvE0mAHaEo?pid=Api&rs=1");
+    }
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </style>
   </head>
   <body>
-    <div style="background-image: url('https://th.bing.com/th/id/OIP.vMjDrdMdQrLEttE8DbjTpQHaEK?w=321&h=180&c=7&o=5&dpr=1.35&pid=1.7');">
     <div class="signup-form">
       <form class="" action="reg" method="post">
         {% csrf_token %}
@@ -19,7 +23,6 @@
         <input type="submit" value="Create Account" class="signup-btn">
         <a href="#">Already Have one ?</a>
       </form>
-     </div> 
     </div>
   </body>
 </html>
