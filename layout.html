@@ -1,18 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"><!-- Required meta tags -->
 </head>
 <body>
     <form action="reg" method="post">
         {% csrf_token %}
+        <h1>Sign Up</h1>
         <input type="text" name="first_name" placeholder="Firest"><br>
         <input type="text" name="last_name" placeholder="Lirest"><br>
         <input type="text" name="username" placeholder="Uirest"><br>
         <input type="email" name="email" placeholder="Eirest"><br>
         <input type="password" name="password1" placeholder="Pirest"><br>
         <input type="password" name="password2" placeholder="CPirest"><br>
-        <input type="Submit">
+        <input type="Submit" value="Create Account" class="signup-btn">
     </form>
 </body>
 </html>
