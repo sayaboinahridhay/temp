@@ -67,21 +67,21 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#preview">PREVIEW</a>
                 </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#your-link"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="#your-link"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
-
+		{% if user.is_authenticated %} 
+		<li class="nav-item">
+		   Hi,User
+		</li>
+		<li class="nav-item">  
+	           <a class="nav-link page-scroll" href="register/logout">LOGOUT</a>
+		</li>
+                {% else %}
+		<li class="nav-item">
+		    <a class="nav-link page-scroll" href="register/login">LOGIN</a>
+		</li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="register/reg">signup</a>
+                    <a class="nav-link page-scroll" href="register/reg">SIGNUP</a>
                 </li>
+		{% endif %}
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
