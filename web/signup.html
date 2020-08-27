@@ -1,30 +1,18 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  </head>
-  <body>
-    <div class="signup-form">
-      <form class="" action="login" method="post">
+<html>
+<head>
+    <!-- Required meta tags -->
+</head>
+<body>
+    <form action="reg" method="post">
         {% csrf_token %}
-        <h1>Login</h1>
-        <input type="text" name="first_name" placeholder="first_name"><br>
-        <input type="text" name="last_name" placeholder="last_name"><br>
-        <input type="text" name="username" placeholder="username"><br>
-        <input type="password" name="password1" placeholder="password1"><br>
-        <input type="password" name="password2" placeholder="password2"><br>
-        <input type="email" name="email" placeholder="email"><br>
-        <input type="submit" value="Signinto Account" class="signup-btn">
-      </form>
-      <div>
-        {% for messages in messages %}
-        <h3> {{messages}}  </h3>
-        {% endfor %}
-      </div>
-    </div>
-  </body>
+        <input type="text" name="first_name" placeholder="Firest"><br>
+        <input type="text" name="last_name" placeholder="Lirest"><br>
+        <input type="text" name="username" placeholder="Uirest"><br>
+        <input type="email" name="email" placeholder="Eirest"><br>
+        <input type="password" name="password1" placeholder="Pirest"><br>
+        <input type="password" name="password2" placeholder="CPirest"><br>
+        <input type="Submit">
+    </form>
+</body>
 </html>
